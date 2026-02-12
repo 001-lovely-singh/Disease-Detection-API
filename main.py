@@ -22,7 +22,7 @@ all_symptoms = pickle.load(open("symptom_list.pkl", "rb"))
 
 # ================= LOAD DATASET =================
 data = pd.read_csv("datasetnew.csv").fillna("")
-data = data.applymap(
+data = data.map(
     lambda x: x.strip().lower().replace(" ", "_") if isinstance(x, str) else x
 )
 
@@ -85,3 +85,4 @@ def predict(data: PredictionRequest):
         "ml_predict": ml_disease.replace("_", " ").title(),
         "rule_based_predict": rule_results
     }
+
