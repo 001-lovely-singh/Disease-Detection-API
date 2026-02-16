@@ -30,52 +30,37 @@ This project was built to combine practical ML implementation, API development, 
 Here’s what you can do with MediPredict:
 
 - Select Symptoms
-
 Users can input symptoms manually inside the Android app.
 
 - ML-Based Prediction
-
 The trained ML model predicts the most probable disease based on symptom patterns.
 
 - Rule-Based Filtering
-
 Before showing ML results, a rule-based system filters diseases strictly matching entered symptoms.
 
 - Clean Result Output
-
 Displays full report with name , age and gender with disease names
-
 Rule-based diseases shown line by line
-
 ML prediction shown separately
-
 No confusing percentages (clean UI focus)
 
 - API Integration
-
 The Android app communicates with a FastAPI backend for real-time predictions.
 
 - Fast Response
-
 Optimized backend for quick inference and smooth mobile experience.
 
 ## 🎯 How It Works
 
 1. Dataset is cleaned and preprocessed.
-
 2. Symptoms are converted into multi-hot encoded vectors.
-
 3. Data imbalance handled using SMOTE.
-
 4. XGBoost model is trained.
-
 5. Model is saved using Pickle.
-
 6. FastAPI serves the model.
-
 7. Android app sends symptoms → API returns predicted disease.
 
-#3 👨‍🍳 The Process
+## 👨‍🍳 The Process
 
 I started by cleaning the dataset and standardizing symptom text.
 Then I implemented multi-hot encoding to represent symptoms numerically.
@@ -83,11 +68,8 @@ Then I implemented multi-hot encoding to represent symptoms numerically.
 After that:
 
 - Applied SMOTE to balance rare diseases
-
 - Used Stratified Shuffle Split for fair training/testing
-
 - Trained an XGBoost classifier
-
 - Evaluated model accuracy
 
 Next, I built a FastAPI backend to serve predictions.
@@ -95,9 +77,7 @@ Next, I built a FastAPI backend to serve predictions.
 Finally, I integrated the API with an Android app using Retrofit and displayed clean, structured results.
 
 Testing was done both on:
-
 - Backend API endpoints
-
 - Android result rendering
 
 ## 📚 What I Learned
