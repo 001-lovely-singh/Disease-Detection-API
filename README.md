@@ -7,31 +7,29 @@ This project was built to combine practical ML implementation, API development, 
 
 ## 📦 Technologies
 
-### 🔙 Backend
+- 'Kotlin'
 
-- Python
+- 'Python'
 
-- FastAPI
+- 'FastAPI'
 
-- Pandas
+- 'Retrofit'
 
-- Scikit-learn
+- 'Java'
 
-- XGBoost
+- 'Pandas'
 
-- SMOTE (Imbalanced data handling)
+- 'Scikit-learn'
 
-- Pickle (Model Serialization)
+- 'XGBoost'
 
-### 📱 Android App
+- 'SMOTE'
 
-Kotlin
+- 'Pickle'
 
-XML
+- 'XML'
 
-Retrofit
-
-OkHttp
+- 'OkHttp'
 
 🧠 Machine Learning
 
