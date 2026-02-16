@@ -1,4 +1,4 @@
-### 🩺 CheckUp+
+# 🩺 CheckUp+
 
 An AI-powered Disease Detection App built using Machine Learning and Rule-Based logic.
 The app predicts possible diseases based on user-entered symptoms and provides instant results.
