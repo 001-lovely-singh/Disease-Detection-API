@@ -1,4 +1,4 @@
-##🩺 CheckUp+
+###🩺 CheckUp+
 
 An AI-powered Disease Detection App built using Machine Learning and Rule-Based logic.
 The app predicts possible diseases based on user-entered symptoms and provides instant results.
@@ -6,6 +6,7 @@ The app predicts possible diseases based on user-entered symptoms and provides i
 This project was built to combine practical ML implementation, API development, and Android integration into one complete real-world system.
 
 📦 Technologies
+
 🔙 Backend
 
 Python
