@@ -1,13 +1,13 @@
-###🩺 CheckUp+
+### 🩺 CheckUp+
 
 An AI-powered Disease Detection App built using Machine Learning and Rule-Based logic.
 The app predicts possible diseases based on user-entered symptoms and provides instant results.
 
 This project was built to combine practical ML implementation, API development, and Android integration into one complete real-world system.
 
-📦 Technologies
+## 📦 Technologies
 
-🔙 Backend
+### 🔙 Backend
 
 Python
 
@@ -23,7 +23,7 @@ SMOTE (Imbalanced data handling)
 
 Pickle (Model Serialization)
 
-📱 Android App
+### 📱 Android App
 
 Kotlin
 
