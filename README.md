@@ -7,61 +7,43 @@ This project was built to combine practical ML implementation, API development, 
 
 ## 📦 Technologies
 
-- 'Kotlin'
+- `Kotlin`
+- `Python`
+- `FastAPI`
+- `Retrofit`
+- `Java`
+- `Pandas`
+- `Scikit-learn`
+- `XGBoost`
+- `SMOTE`
+- `Pickle`
+- `XML`
+- `OkHttp`
+- `Multi-hot Encoding`
+- `Stratified Shuffle Split`
+- `Label Encoding`
+- `Rule-Based Filtering`
+- `XGBClassifier`
 
-- 'Python'
-
-- 'FastAPI'
-
-- 'Retrofit'
-
-- 'Java'
-
-- 'Pandas'
-
-- 'Scikit-learn'
-
-- 'XGBoost'
-
-- 'SMOTE'
-
-- 'Pickle'
-
-- 'XML'
-
-- 'OkHttp'
-
-🧠 Machine Learning
-
-Multi-hot Encoding
-
-Stratified Shuffle Split
-
-Label Encoding
-
-Rule-Based Filtering
-
-XGBClassifier
-
-🦄 Features
+## 🦄 Features
 
 Here’s what you can do with MediPredict:
 
-📝 Enter Symptoms
+- Select Symptoms
 
 Users can input symptoms manually inside the Android app.
 
-🤖 ML-Based Prediction
+- ML-Based Prediction
 
 The trained ML model predicts the most probable disease based on symptom patterns.
 
-📏 Rule-Based Filtering
+- Rule-Based Filtering
 
 Before showing ML results, a rule-based system filters diseases strictly matching entered symptoms.
 
-📊 Clean Result Output
+- Clean Result Output
 
-Displays only disease names
+Displays full report with name , age and gender with disease names
 
 Rule-based diseases shown line by line
 
@@ -69,44 +51,44 @@ ML prediction shown separately
 
 No confusing percentages (clean UI focus)
 
-🔄 API Integration
+- API Integration
 
 The Android app communicates with a FastAPI backend for real-time predictions.
 
-⚡ Fast Response
+- Fast Response
 
 Optimized backend for quick inference and smooth mobile experience.
 
-🎯 How It Works
+## 🎯 How It Works
 
-Dataset is cleaned and preprocessed.
+1. Dataset is cleaned and preprocessed.
 
-Symptoms are converted into multi-hot encoded vectors.
+2. Symptoms are converted into multi-hot encoded vectors.
 
-Data imbalance handled using SMOTE.
+3. Data imbalance handled using SMOTE.
 
-XGBoost model is trained.
+4. XGBoost model is trained.
 
-Model is saved using Pickle.
+5. Model is saved using Pickle.
 
-FastAPI serves the model.
+6. FastAPI serves the model.
 
-Android app sends symptoms → API returns predicted disease.
+7. Android app sends symptoms → API returns predicted disease.
 
-👨‍🍳 The Process
+#3 👨‍🍳 The Process
 
 I started by cleaning the dataset and standardizing symptom text.
 Then I implemented multi-hot encoding to represent symptoms numerically.
 
 After that:
 
-Applied SMOTE to balance rare diseases
+- Applied SMOTE to balance rare diseases
 
-Used Stratified Shuffle Split for fair training/testing
+- Used Stratified Shuffle Split for fair training/testing
 
-Trained an XGBoost classifier
+- Trained an XGBoost classifier
 
-Evaluated model accuracy
+- Evaluated model accuracy
 
 Next, I built a FastAPI backend to serve predictions.
 
@@ -114,97 +96,78 @@ Finally, I integrated the API with an Android app using Retrofit and displayed c
 
 Testing was done both on:
 
-Backend API endpoints
+- Backend API endpoints
 
-Android result rendering
+- Android result rendering
 
-📚 What I Learned
-🧠 Machine Learning Pipeline
+## 📚 What I Learned
 
-Handling imbalanced datasets
+During this project, I've picked up important skills and a better understanding of complex ideas, which improved my logical thinking.
 
-Feature engineering using multi-hot encoding
+🧠*Machine Learning Pipeline*
+- Handling imbalanced datasets
+- Feature engineering using multi-hot encoding
+- Model evaluation strategies
 
-Model evaluation strategies
+🔎*Data Cleaning*
+- Standardizing symptom strings
+- Managing missing values
+- Avoiding duplicate patterns
 
-🔎 Data Cleaning
+⚙️*Backend Development*
+- Building REST APIs with FastAPI
+- Handling CORS
+- Structuring JSON responses properly
 
-Standardizing symptom strings
+📱*Android Integration*
+- Connecting mobile apps with backend APIs
+- Managing async calls with Retrofit
+- Parsing API responses cleanly
 
-Managing missing values
+📊*Logical System Design*
+- Combining rule-based logic with ML prediction helped me understand:
+- When to trust strict logic
+- When to use probabilistic models
+- How to merge both intelligently
 
-Avoiding duplicate patterns
+## Running the Project
 
-⚙️ Backend Development
+### 🔹 Option 1: Install APK
 
-Building REST APIs with FastAPI
+1. Download the APK from the link below
+2. Enable “Install from Unknown Sources” on your device
+3. Install the APK
+4. Open the app and start entering symptoms
 
-Handling CORS
+📦 Download APK:
+[Download Here]([your-apk-link](https://drive.google.com/drive/folders/1yMfD2joASSEqcLj8SapalOc0HTaJTWvE))
 
-Structuring JSON responses properly
+### 🔹 Option 2: Run From Source Code
 
-📱 Android Integration
-
-Connecting mobile apps with backend APIs
-
-Managing async calls with Retrofit
-
-Parsing API responses cleanly
-
-📊 Logical System Design
-
-Combining rule-based logic with ML prediction helped me understand:
-
-When to trust strict logic
-
-When to use probabilistic models
-
-How to merge both intelligently
-
-🚀 Running the Project
-🔹 Backend Setup
 git clone <repository-link>
-cd backend-folder
+cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 
+Android Setup
 
-Open:
+1. Open project in Android Studio
+2. Connect device or emulator
+3. Update BASE_URL if needed
+4. Run the app
 
-http://127.0.0.1:8000/docs
+## 💭 How It Can Be Improved
 
-🔹 Android Setup
+- Add symptom auto-suggestions
+- Add disease description and precautions
+- Add probability confidence score
+- Add user history tracking
+- Improve UI/UX design
+- Add authentication system
 
-Open project in Android Studio
+## 📈 Future Scope
 
-Connect device or emulator
-
-Update BASE_URL if needed
-
-Run the app
-
-💭 How It Can Be Improved
-
-Add symptom auto-suggestions
-
-Add disease description and precautions
-
-Add probability confidence score
-
-Add user history tracking
-
-Deploy backend on cloud (Render / AWS / Railway)
-
-Improve UI/UX design
-
-Add authentication system
-
-📈 Future Scope
-
-Add chatbot-style symptom input
-
-Add voice-based symptom detection
-
-Convert into a telemedicine assistant
-
-Deploy as full-stack web app
+- Add chatbot-style symptom input
+- Add voice-based symptom detection
+- Convert into a telemedicine assistant
+- Deploy as full-stack web app
