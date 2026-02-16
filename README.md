@@ -29,25 +29,25 @@ This project was built to combine practical ML implementation, API development, 
 
 Here’s what you can do with MediPredict:
 
-- Select Symptoms
+- Select Symptoms :
 Users can input symptoms manually inside the Android app.
 
-- ML-Based Prediction
+- ML-Based Prediction :
 The trained ML model predicts the most probable disease based on symptom patterns.
 
-- Rule-Based Filtering
+- Rule-Based Filtering :
 Before showing ML results, a rule-based system filters diseases strictly matching entered symptoms.
 
-- Clean Result Output
+- Clean Result Output :
 Displays full report with name , age and gender with disease names
 Rule-based diseases shown line by line
 ML prediction shown separately
 No confusing percentages (clean UI focus)
 
-- API Integration
+- API Integration :
 The Android app communicates with a FastAPI backend for real-time predictions.
 
-- Fast Response
+- Fast Response :
 Optimized backend for quick inference and smooth mobile experience.
 
 ## 🎯 How It Works
@@ -120,7 +120,7 @@ During this project, I've picked up important skills and a better understanding 
 4. Open the app and start entering symptoms
 
 📦 Download APK:
-[Download Here]([your-apk-link](https://drive.google.com/drive/folders/1yMfD2joASSEqcLj8SapalOc0HTaJTWvE))
+[Download Here](https://drive.google.com/drive/folders/1yMfD2joASSEqcLj8SapalOc0HTaJTWvE)
 
 ### 🔹 Option 2: Run From Source Code
 
