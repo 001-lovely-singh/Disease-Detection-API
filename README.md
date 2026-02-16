@@ -9,19 +9,19 @@ This project was built to combine practical ML implementation, API development, 
 
 ### 🔙 Backend
 
-Python
+- Python
 
-FastAPI
+- FastAPI
 
-Pandas
+- Pandas
 
-Scikit-learn
+- Scikit-learn
 
-XGBoost
+- XGBoost
 
-SMOTE (Imbalanced data handling)
+- SMOTE (Imbalanced data handling)
 
-Pickle (Model Serialization)
+- Pickle (Model Serialization)
 
 ### 📱 Android App
 
