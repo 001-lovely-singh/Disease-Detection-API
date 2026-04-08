@@ -45,6 +45,10 @@ class PredictionRequest(BaseModel):
 def home():
     return {"message": "Disease Prediction API is running"}
 
+@app.get("/ping")
+def ping():
+    return {"status": "ok"}
+
 
 @app.post("/predict")
 def predict(data: PredictionRequest):
